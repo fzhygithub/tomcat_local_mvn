@@ -1,6 +1,6 @@
 FROM registrydev.enncloud.cn/library/tomcat:latest
 
-ADD docker-demo.war /usr/local/tomcat/webapps/
+ADD target/docker-demo.war /usr/local/tomcat/webapps/
 
 ### run ###
 EXPOSE 8080
